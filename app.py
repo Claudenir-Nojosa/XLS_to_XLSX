@@ -4,11 +4,11 @@ import win32com.client as win32
 # Função para renomear o arquivo com base no nome original
 def renomear_arquivo(nome_original, nome_empresa):
     mapeamento = {
-        "Rel Entrada": "Relatório Entrada",
-        "Rel Saída": "Relatório Saída",
-        "Mov Entrada": "Movimentação Entrada",
-        "Mov Saída": "Movimentação Saída",
-        "Mov CFe": "Movimentação CFe"
+        "Relatório Entrada": "Relatório Entrada",
+        "Relatório Saída": "Relatório Saída",
+        "Relatorio Produto NFe Entrada": "Movimentação Entrada",
+        "Relatorio Produto NFe Saída": "Movimentação Saída",
+        "Relatorio Produto CFe Saída": "Movimentação CFe"
     }
     # Procura uma chave que esteja no nome original
     for chave, novo_nome in mapeamento.items():
